@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    h2{
+            
+            bottom: 0; 
+            width: 100%; 
+            background-color: #fff; 
+            color: #333; 
+            text-align: center; 
+            padding: 10px 0; 
+                }
+                .navbar {
+            background-color: #92a3b4;
+            padding: 10px 20px;
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center;
+        }
+        
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-item {
+            display: inline-block;
+            margin-right: 20px;
+            display: flex; 
+        }
+        
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+        
+        .nav-item a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+</style>
+<body>
+    <div class="container mt-5">
+        <h2>Delete User</h2>
+        <form action="/admin/deleteUser" method="post">
+            <div class="form-group">
+                <label for="deleteName">Name:</label>
+                <input type="text" id="deleteName" name="deleteUsername" class="form-control" placeholder="Enter username" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Delete User</button>
+        </form>
+
+        <hr>
+
+        <h2>Change Password</h2>
+        <form action="/admin/changePassw" method="post">
+            <div class="form-group">
+                <label for="modName">Name:</label>
+                <input type="text" id="modName" name="modUsername" class="form-control" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">New Password:</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter new password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Change User</button>
+        </form>
+    </div>
+</body>
+</html>
