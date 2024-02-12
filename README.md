@@ -1,7 +1,8 @@
 -----PLEASE OPEN LASTTRY.rar------
-
-
-
+.
+.
+.
+.
 # City Explorer
 City Explorer is a web application that allows users to explore cities around the world. Users can input a city name and view its location on a map, discover its national dish, and receive random advice.
 
